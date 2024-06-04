@@ -16,8 +16,16 @@ export default function Logo() {
                 height='30'
                 width='30'
                 alt='logo'
+                className='dark:hidden'
             />
-            <p className={cn("font-semibold",font.className)} >Shamu</p>
+            <Image
+                src='/dark-flower.png'
+                height='30'
+                width='30'
+                alt='logo'
+                className=' hidden dark:block'
+            />
+            <p className={cn("font-semibold", font.className)} >Shamu</p>
         </div>
     )
 }

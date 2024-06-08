@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
-import { cva } from "class-variance-authority";
+import { VariantProps, cva } from "class-variance-authority";
+import { Loader } from "lucide-react";
 
 
 const spinnerVariants = cva(
@@ -19,4 +20,10 @@ const spinnerVariants = cva(
     }
 )
 
-// interface Spin
+interface SpinnerProps extends VariantProps<typeof spinnerVariants> { }
+
+export const Spinner = ({ size }: SpinnerProps) => {
+    return (
+        <Loader className={cn(spinnerVariants({ size }))} />
+    )
+}

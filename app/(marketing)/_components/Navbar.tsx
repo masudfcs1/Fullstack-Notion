@@ -38,7 +38,7 @@ const Navbar = () => {
                     </>
                 )}
 
-                {isAuthenticated && !isLoading && (
+                {/* {isAuthenticated && !isLoading && (
                     <>
                         <Button variant='ghost' size='sm' asChild >
                             <Link href='/documents' >
@@ -47,7 +47,7 @@ const Navbar = () => {
                         </Button>
                         <UserButton afterSignOutUrl="/" />
                     </>
-                )}
+                )} */}
 
 
                 <ModeToggle />
